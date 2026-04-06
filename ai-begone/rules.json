@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*//brave.com/api/summarizer*",
+      "resourceTypes": ["xmlhttprequest", "fetch", "script"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*//*.google.com/*generate_ai*",
+      "resourceTypes": ["xmlhttprequest", "fetch"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*//*.bing.com/sydney/*",
+      "resourceTypes": ["xmlhttprequest", "fetch", "websocket"]
+    }
+  }
+]
